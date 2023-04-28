@@ -120,3 +120,28 @@ void main()
     }
     AP(g);
 }   
+
+________________________________________________________________________________________________________________________________________________
+// output section
+main.c: In function ‘createGraph’:
+main.c:23:15: warning: assignment to ‘struct node **’ from incompatible pointer type ‘int **’ [-Wincompatible-pointer-types]
+   23 |      temp->arr=(int**)malloc(sizeof(int*)*v);
+      |               ^
+Please enter size of the graph : 4
+
+Please number of edges : 4
+
+Enter the edge 0
+0  1
+
+Enter the edge 1
+1   2
+
+Enter the edge 2
+2   0
+
+Enter the edge 3
+1   3
+
+Searching critical connection.....
+Vertcies : [1,3]
